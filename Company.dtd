@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE Companies [
+        <!ELEMENT Companies (Company)*>
+        <!ELEMENT Company (City|Route|CanoePrice|SleepingPlaces)*>
+        <!ATTLIST Company
+                address CDATA #REQUIRED
+                name CDATA #REQUIRED
+                phoneNumber CDATA #REQUIRED>
+        <!ELEMENT City (name|region)*>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT region (#PCDATA)>
+        <!ELEMENT Route (RiverName|Disance)*>
+        <!ELEMENT RiverName (#PCDATA)>
+        <!ELEMENT Disance (#PCDATA)>
+        <!ELEMENT CanoePrice (price|size|name)*>
+        <!ELEMENT price (#PCDATA)>
+        <!ELEMENT size (#PCDATA)>
+        <!ELEMENT SleepingPlaces (PlaceName|price)*>
+        <!ELEMENT PlaceName (#PCDATA)>
+        ]>

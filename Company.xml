@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Companies>
+    <Company name="Svaja" address="Viksnenu 15" phoneNumber="861250467">
+        <City>
+            <name>Viksnenai</name>
+            <region>Mariampoles raj.</region>
+        </City>
+        <Route>
+            <RiverName>Neris</RiverName>
+            <Disance>15</Disance>
+        </Route>
+        <CanoePrice>
+            <price>10</price>
+            <size>2</size>
+            <name>Vongola</name>
+        </CanoePrice>
+        <SleepingPlaces>
+            <PlaceName>Sekvoja</PlaceName>
+            <price>150</price>
+        </SleepingPlaces>
+    </Company>
+    <Company name="Jura" address="Salcininku 15" phoneNumber="861250467">
+        <City>
+            <name>Salcininku</name>
+            <region>Kauno raj.</region>
+        </City>
+        <Route>
+            <RiverName>Salcia</RiverName>
+            <Disance>10</Disance>
+        </Route>
+        <CanoePrice>
+            <price>12</price>
+            <size>2</size>
+            <name>Ingla</name>
+        </CanoePrice>
+        <SleepingPlaces>
+            <PlaceName>Pas Juoza</PlaceName>
+            <price>170</price>
+        </SleepingPlaces>
+    </Company>
+</Companies>
