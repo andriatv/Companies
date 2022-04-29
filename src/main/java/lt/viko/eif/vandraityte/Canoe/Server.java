@@ -44,7 +44,7 @@ public class Server {
         }
         fileOutputStream.close();
     }
-
+/*send files*/
     public static void sendFile(String path) throws Exception {
         int bytes = 0;
         File file = new File(path);

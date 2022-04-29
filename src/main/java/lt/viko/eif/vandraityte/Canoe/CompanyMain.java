@@ -13,6 +13,17 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/* Creating CompanyOutputResolver class to write  StreamResult on a StringWriter and to get file */
+class CompanyOutputResolver extends SchemaOutputResolver {
+
+    public Result createOutput(String namespaceURI, String suggestedFileName) {
+        File file = new File("Company.xsd");
+        StreamResult result = new StreamResult(file);
+        result.setSystemId(file.getAbsolutePath());
+        System.out.println(file.getAbsolutePath());
+        return result;
+    }
+}
 /**
  * Filling main file
  */
@@ -105,7 +116,7 @@ public class CompanyMain {
 
             JAXBContext context= JAXBContext.newInstance (CompanyList.class);
             Unmarshaller unmarshaller = context.createUnmarshaller();
-            SchemaOutputResolver sor = new MySchemaOutputResolver();
+            SchemaOutputResolver sor = new CompanyOutputResolver();
             context.generateSchema(sor);
             File file = new File ("Company.xml");
             Source source = new StreamSource(file);
@@ -128,16 +139,6 @@ public class CompanyMain {
 
     }
 }
-/* Creating MySchemaOutputResolver class to write  StreamResult on a StringWriter and to get file */
-class MySchemaOutputResolver extends SchemaOutputResolver {
 
-    public Result createOutput(String namespaceURI, String suggestedFileName) {
-        File f = new File("Company.xsd");
-        StreamResult result = new StreamResult(f);
-        result.setSystemId(f.getAbsolutePath());
-        System.out.println(f.getAbsolutePath());
-        return result;
-    }
-}
 
 

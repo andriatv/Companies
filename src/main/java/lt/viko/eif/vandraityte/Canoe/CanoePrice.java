@@ -6,7 +6,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /*
-Creating CanoePrice calss, which shows Canoes price, size and name
+Creating CanoePrice class, which shows Canoes price, size and name
 
 */
 @XmlAccessorType(XmlAccessType.FIELD)
